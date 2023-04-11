@@ -16,3 +16,27 @@ Navigate to working folder and enter: npm init --yes for default
 - Install dependencies with: npm install
     - Similar to Python's pip install -r requirements.txt
 - Install axios with: npm install axios
+
+# Node Process
+Process is a global object in Node
+- process.env returns value of environment variables
+- process.argv returns argument variables
+- process.exit exits program and returns exit code to shell
+
+# Run File
+Using node {file_name} i.e. node node.js
+- Including additional text after file run command is considered args that is listed in process.argv
+- Ex. node node.js COLOR="White", will include COLOR on process.argv
+
+# Node Modules
+- No <script> tags in Node, must export and import explicitly
+- All imports use the require keyword, to import local files must specify relative paths
+- Ex. const math = require("./math");
+    - Use ./ to indicate current directory and ../ is parent directory
+- Use module.exports to explicitly state in export file what can be imported
+    - module.exports = {add, subtract} etc.
+- Now, inside of working file, can use the exported functions:
+    - console.log(math.add(1,2))
+- Can also list as variables for import:
+    - const {add, subtract} = require("./math");
+    - Can now console.log(add(1, 2)) without math variable
