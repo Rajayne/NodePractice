@@ -1,3 +1,8 @@
+const {add, subtract} = require('./math')
+
+console.log(add(1,2))
+console.log(subtract(3,2))
+
 setInterval(function() {
     console.log("Hello!")
 }, 1000);
@@ -6,4 +11,4 @@ setInterval(function() {
 setInterval(function() {
     console.log("Goodbye!")
     process.exit(1)
-}, 6000);
+}, 3000);
