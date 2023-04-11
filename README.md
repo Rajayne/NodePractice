@@ -64,4 +64,5 @@ Must require fs to use module
 - If missing package.json, create empty jest.config.js
 - Run tests using command: jest NAME_OF_FILE
 - If only one test file, simply: jest
-
+- Describe can be used to group tests
+- Different types of Matchers can be used for testing
