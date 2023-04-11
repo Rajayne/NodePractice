@@ -29,4 +29,16 @@ describe('Test matchers', function() {
         expect('hi').toBeTruthy();
         expect('').toBeFalsy();
     })
+
+    test('Any matcher', function() {
+        const randNum = Math.random() * 6;
+        expect(randNum).toEqual(expect.any(Number));
+        expect('ASDF').toEqual(expect.any(String));      
+    })
+
+    test('Not modifier', function() {
+        const numLives = 9;
+        expect(numLives).not.toEqual(0);
+        expect(numLives).not.toEqual(expect.any(String)); 
+    })
 })

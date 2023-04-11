@@ -66,3 +66,5 @@ Must require fs to use module
 - If only one test file, simply: jest
 - Describe can be used to group tests
 - Different types of Matchers can be used for testing
+- beforeEach, afterEach run for each test, beforeAll, afterAll run before or after all tests
+    - Can be written inside describe group or outside
