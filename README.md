@@ -43,6 +43,17 @@ Using node {file_name} i.e. node node.js
 
 # File System
 Node built-in fs module
+fs.readFile(path, encoding, callback)
+- path to file
+- encoding how to interpret, usually "utf8"
+- callback is a function that takes params error and data
+fs.writeFile(path, data, encoding, callback)
+- data to output to file, typically a string
+- Will default overwrite all data unless specifying flag i.e. {encoding: 'utf8', flag: 'a'} in param encoding
+- a = append
+fs.appendFile(path, data, encoding, callback)
+- appends to file without needing flag
 
 # Node Callbacks
 Error-first callback parameter
+Must require fs to use module
