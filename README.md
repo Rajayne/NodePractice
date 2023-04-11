@@ -40,3 +40,9 @@ Using node {file_name} i.e. node node.js
 - Can also list as variables for import:
     - const {add, subtract} = require("./math");
     - Can now console.log(add(1, 2)) without math variable
+
+# File System
+Node built-in fs module
+
+# Node Callbacks
+Error-first callback parameter
