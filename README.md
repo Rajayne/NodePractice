@@ -57,3 +57,11 @@ fs.appendFile(path, data, encoding, callback)
 # Node Callbacks
 Error-first callback parameter
 Must require fs to use module
+
+# Test Files Using Jest
+- Test files should be named NAME_OF_FILE.test.js
+- Tests can be in same directory as JS file or in a '__tests__' folder
+- If missing package.json, create empty jest.config.js
+- Run tests using command: jest NAME_OF_FILE
+- If only one test file, simply: jest
+
